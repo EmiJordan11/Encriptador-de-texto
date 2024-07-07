@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <img src="assets/alura_logo.svg" alt="Logo de alura latam" class="logo">
+    <main class="contenido">
+        <div class="contenido__entrada">
+            <textarea placeholder="Ingrese el texto aquí" id="contenido__entrada__input"></textarea>
+            <div class="contenido__entrada__aclaracion">
+                <img src="assets/Vector_exclamacion.png" alt="" id="imagen__aclaracion">
+                <p id="texto__aclaracion"> Solo letras minúsculas y sin acentos</p>
+            </div>
+            <div class="contenido__entrada__botones">
+                <button class="botones" id="encriptar" onclick="encriptarTexto();">Encriptar</button>
+                <button class="botones" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
+            </div>
+        </div>
+
+        <div class="contenido__salida">
+            <img src="assets/personas_buscando.jpg" alt="" id="contenido__salida__imagen">
+            <p id="contenido__salida__titulo"> Ningún mensaje fue encontrado</p>
+            <p id="contenido__salida__texto"> Ingresa el texto que desees encriptar o desencriptar.</p>
+            <div class="contenido__salida__oculto">
+                <p id="contenido__salida__respuesta"></p>
+            </div>
+            <div class="contenedor__boton">
+                <button id="copiar" onclick="copiarTexto()">Copiar</button>
+            </div>
+           
+        </div>
+    </main>
+    <script src="app.js"> </script>
+</body>
+</html>
