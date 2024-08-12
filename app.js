@@ -1,3 +1,6 @@
+/*definiciones*/
+vocalesTildes = ["á", "é", "í", "ó", "ú"]
+
 
 function mostrarResultado(texto){
     //oculto los otros elementos
@@ -26,6 +29,13 @@ function copiarTexto(){
 function encriptarTexto(){
 
     let cadena = document.getElementById('contenido__entrada__input').value
+
+    /*verifico si el texto tiene mayusculas o acentos*/
+    if (verificarMayusculasYAcentos(cadena)) {
+        return ;
+    }
+    
+
     cadena = cadena.replaceAll("e", "enter");
     cadena = cadena.replaceAll("i", "imes");
     cadena = cadena.replaceAll("a", "ai");
@@ -40,6 +50,12 @@ function encriptarTexto(){
 
 function desencriptarTexto(){
     let cadena = document.getElementById('contenido__entrada__input').value
+
+    /*verifico si el texto tiene mayusculas o acentos*/
+    if (verificarMayusculasYAcentos(cadena)) {
+        return ;
+    }
+    
     cadena = cadena.replaceAll("enter", "e");
     cadena = cadena.replaceAll("imes", "i");
     cadena = cadena.replaceAll("ai", "a");
@@ -48,4 +64,16 @@ function desencriptarTexto(){
 
     mostrarResultado(cadena);
 
+}
+
+function verificarMayusculasYAcentos(texto){
+    
+    for (const letra of texto) {
+        if (letra.toUpperCase()==letra || vocalesTildes.includes(letra) ) {
+            alert("Texto inválido, por favor ingrese un nuevo texto sin mayúsculas ni tildes")
+            return 1;
+        }
+    }
+
+    return 0;
 }
