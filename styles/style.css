@@ -90,7 +90,7 @@ body {
     border-radius: 32px;
     background-color: #FFFF;
     padding: 2.5%;
-    position: relative;
+    /* position: relative; */
 }
 
 #contenido__salida__imagen{
@@ -128,7 +128,7 @@ body {
     font-size: 1rem;
     background-color: #9CDBA6;
     padding: 24px;
-    width: 85%;
+    width: 100%;
     border: 2px solid #2b5950;
 }
 
