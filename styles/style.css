@@ -33,7 +33,7 @@ header{
     flex-direction: column;
     align-content: center;
     gap: 12px;
-    margin-left: 20%;
+    margin-left: 10%;
     width: 50%;
 }
 #contenido__entrada__input{
@@ -90,7 +90,7 @@ header{
 .contenido__salida{
     display: flex;
     flex-direction: column;
-    width: 22%;
+    width: 25%;
     border-radius: 32px;
     background-color: #FFFF;
     padding: 2.5%;
@@ -147,7 +147,7 @@ header{
 /*------------------RESPONSIVE*/
 
 /*--TABLET--*/
-@media (max-width:768px){
+@media (max-width:900px){
 
     body, html{
         width: 100%;
