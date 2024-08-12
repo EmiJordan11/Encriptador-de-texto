@@ -185,7 +185,8 @@ header{
 
     .contenido__salida{
         width: 90%;
-        margin: 5%; /*revisar*/
+        margin: 5%;
+        padding: 4% ;
     }
 
     #contenido__salida__imagen{
@@ -210,9 +211,5 @@ header{
         width: 90%;
         height: 65%;
         margin: 5%;
-    }
-
-    #contenido__salida__respuesta{
-        padding: 4%;
     }
 }
