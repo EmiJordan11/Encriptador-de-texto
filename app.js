@@ -69,11 +69,40 @@ function desencriptarTexto(){
 function verificarMayusculasYAcentos(texto){
     
     for (const letra of texto) {
-        if (letra.toUpperCase()==letra || vocalesTildes.includes(letra) ) {
-            alert("Texto inválido, por favor ingrese un nuevo texto sin mayúsculas ni tildes")
-            return 1;
+        if (letra!==" ") {
+            if (letra.toUpperCase()==letra || vocalesTildes.includes(letra) ) {
+                /*Muestro la advertencia*/
+                document.getElementById('advertencia').style.display='block'
+
+                return 1;
+            }
         }
     }
-
     return 0;
+}
+
+function ocultarAdvertencia(){
+    document.getElementById('advertencia').style.display='none';
+
+    /*Limpia la entrada de texto*/
+    resetearEstilos();
+}
+
+function resetearEstilos(){
+    /*Limpia la entrada de texto*/
+    document.getElementById('contenido__entrada__input').value='';
+
+    /*Limpia la salida de texto*/
+    document.getElementById('contenido__salida__respuesta').style.display='none'
+    document.getElementById('copiar').style.display='none'
+
+    /*Muestro lostextos iniciales*/
+    
+    document.getElementById('contenido__salida__titulo').style.display = "block";
+    document.getElementById('contenido__salida__texto').style.display = "block";
+
+    /*Muestro la imagen solo si la pantalla es la adecuada*/
+    if (window.innerWidth>900) {
+        document.getElementById('contenido__salida__imagen').style.display = "block";
+    }
 }

@@ -6,8 +6,10 @@
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <script src="https://kit.fontawesome.com/45e0b11353.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
-<body>
+<body >
     <header>
         <img src="assets/alura_logo.svg" alt="Logo de alura latam" class="logo">
     </header>
@@ -37,6 +39,30 @@
            
         </div>
     </main>
+    <footer>
+        <p>Desarrollado por Emiliano Jordan para el curso de ONE + Alura Latam</p>
+        <div class="link-personales">
+            <a href="https://github.com/EmiJordan11" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/emiliano-jordan/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        </div>
+        
+
+    </footer>
+    <!-- Cartel de adventencia -->
+    <div id="advertencia">
+        <div class="cartel-advertencia">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            <h2>Texto inválido</h2>
+            <p>Por favor ingrese un nuevo texto sin mayúsculas, tildes ni caracteres especiales</p>
+            <button onclick="ocultarAdvertencia()">Aceptar</button>
+        </div>
+        
+    </div>
+    <!-- Script -->
     <script src="app.js"> </script>
 </body>
 </html>

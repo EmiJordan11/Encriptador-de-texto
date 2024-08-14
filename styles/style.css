@@ -10,6 +10,7 @@ body {
     background-color: #D8EFD3;
     box-sizing: border-box;
     height: 100vh;
+    font-family: var(--fuente-principal);
 }
 
 header{
@@ -26,7 +27,8 @@ header{
     display: flex;
     justify-content: center;
     gap: 55px;
-    height: 85vh;
+    height: 78vh;
+    padding-bottom:10px ;
 }
 .contenido__entrada{
     display: flex;
@@ -85,6 +87,7 @@ header{
     font-size: 1rem;
     background-color: #9CDBA6;
     border: 2px solid #2b5950;
+    cursor: pointer;
 }
 
 .contenido__salida{
@@ -97,7 +100,7 @@ header{
 }
 
 #contenido__salida__imagen{
-    margin-top: 30%;
+    margin-top: 15%;
 }
 
 #contenido__salida__titulo{
@@ -133,6 +136,7 @@ header{
     padding: 24px;
     width: 100%;
     border: 2px solid #2b5950;
+    cursor: pointer;
 }
 
 
@@ -141,10 +145,69 @@ header{
     background-color: #55AD9B;
 }
 
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #2b5950;
+    height: 12vh;
+    padding: 15px;
+    color: #FFFF;
+    font-family: var(--fuente-principal);
+    
+}
+
+footer a{
+    color: #FFFF;
+    font-size: 28px;
+}
+
+.link-personales{
+    display: flex;
+    gap: 15px;
+}
+/*------------------Advertencia-------------------*/
+#advertencia{
+    display: none;
+}
 
 
+.cartel-advertencia{
+    display: none;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(199, 206, 206);
+    width: 50vw;
+    height: 30vh;
+    padding: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -150%);
+    border-radius: 15px;
+}
 
-/*------------------RESPONSIVE*/
+#advertencia i{
+    color: #FF0000;
+    font-size: 35px;
+}
+
+#advertencia button{
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid #0000;
+}
+
+#advertencia button:hover{
+    cursor: pointer;
+    background-color: #5356cf;
+}
+
+/*------------------RESPONSIVE-------------------*/
 
 /*--TABLET--*/
 @media (max-width:900px){
@@ -195,7 +258,7 @@ header{
 
     #copiar{
         width: 100%;
-        margin-top: 5%;
+        margin-top: 15%;
     }
 }
 
