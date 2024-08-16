@@ -1,4 +1,4 @@
-# Encriptador-de-texto
+# Encriptador y Desencriptador de texto
 Challenge Encriptador de Texto para el curso de Alura Latam + ONE
 
 ![Imagen del Encriptador de Texto](https://github.com/user-attachments/assets/fa31735c-5963-4c8f-884f-291f3e2d71fc)
