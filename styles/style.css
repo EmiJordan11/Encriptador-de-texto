@@ -12,7 +12,7 @@ body {
     height: 100vh;
     font-family: var(--fuente-principal);
 }
-
+/* ------------------- HEADER ------------------- */
 header{
     height: 10vh;
 }
@@ -23,6 +23,8 @@ header{
     margin: 2% 0% 0% 2%;
 }
 
+/* ------------------- MAIN ------------------- */
+
 .contenido{
     display: flex;
     justify-content: center;
@@ -30,6 +32,8 @@ header{
     height: 78vh;
     padding-bottom:10px ;
 }
+
+/* ------------------- Contenido izq ------------------- */
 .contenido__entrada{
     display: flex;
     flex-direction: column;
@@ -44,7 +48,6 @@ header{
     resize: none;
     outline: none;
     margin-top: 15%;
-    font-family: var(--fuente-principal);
     font-size: 2rem;
     color: #2b5950;
     background-color: transparent;
@@ -68,7 +71,6 @@ header{
 
 #texto__aclaracion{
     text-align: left;
-    font-family: var(--fuente-principal);
     font-size: 0.75rem;
 }
 
@@ -83,12 +85,13 @@ header{
     border-radius: 24px;
     padding: 24px;
     width: 280px;
-    font-family: var(--fuente-principal);
     font-size: 1rem;
     background-color: #9CDBA6;
     border: 2px solid #2b5950;
     cursor: pointer;
 }
+
+/* ------------------- Contenido der ------------------- */
 
 .contenido__salida{
     display: flex;
@@ -104,7 +107,6 @@ header{
 }
 
 #contenido__salida__titulo{
-    font-family: var(--fuente-principal);
     font-size: 1.5rem;
     font-weight: bold;
     text-align: center;
@@ -112,7 +114,6 @@ header{
 }
 
 #contenido__salida__texto{
-    font-family: var(--fuente-principal);
     font-size: 1rem;
     text-align: center;
     margin-top: 5%; 
@@ -120,7 +121,6 @@ header{
 
 #contenido__salida__respuesta{
     display: none;
-    font-family: var(--fuente-principal);
 }
 
 .contenido__salida__oculto{
@@ -130,7 +130,6 @@ header{
 #copiar{
     display: none;
     border-radius: 24px;
-    font-family: var(--fuente-principal);
     font-size: 1rem;
     background-color: #9CDBA6;
     padding: 24px;
@@ -145,6 +144,8 @@ header{
     background-color: #55AD9B;
 }
 
+/* ------------------- FOOTER ------------------- */
+
 footer{
     display: flex;
     flex-direction: column;
@@ -154,7 +155,6 @@ footer{
     height: 12vh;
     padding: 15px;
     color: #FFFF;
-    font-family: var(--fuente-principal);
     
 }
 
@@ -167,7 +167,7 @@ footer a{
     display: flex;
     gap: 15px;
 }
-/*------------------Advertencia-------------------*/
+/* ------------------- CARTEL ADVERTENCIA ------------------- */
 #advertencia{
     display: none;
 }
@@ -187,7 +187,7 @@ footer a{
     padding: 15px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -150%);
+    transform: translate(-50%, -120%);
     border-radius: 15px;
 }
 
@@ -207,7 +207,7 @@ footer a{
     background-color: #5356cf;
 }
 
-/*------------------RESPONSIVE-------------------*/
+/* ------------------- RESPONSIVE ------------------- */
 
 /*--TABLET--*/
 @media (max-width:900px){

@@ -1,9 +1,9 @@
-/*definiciones*/
+//definiciones
 vocalesTildes = ["á", "é", "í", "ó", "ú"]
 
 
 function mostrarResultado(texto){
-    //oculto los otros elementos
+    //Oculto los elementos predeterminados
     document.getElementById('contenido__salida__imagen').style.display = "none";
     document.getElementById('contenido__salida__titulo').style.display = "none";
     document.getElementById('contenido__salida__texto').style.display = "none";
@@ -12,6 +12,7 @@ function mostrarResultado(texto){
     let respuestaHTML = document.getElementById('contenido__salida__respuesta');
     let botonCopiarHTML = document.getElementById("copiar")
 
+    //Ingreso el texto y muestro los elementos ocultos
     respuestaHTML.innerHTML = texto;
     respuestaHTML.style.display = "block";
     botonCopiarHTML.style.display = "block";

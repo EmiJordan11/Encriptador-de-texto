@@ -6,18 +6,19 @@
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <!-- Importacion para iconos -->
     <script src="https://kit.fontawesome.com/45e0b11353.js" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body >
     <header>
         <img src="assets/alura_logo.svg" alt="Logo de alura latam" class="logo">
     </header>
     <main class="contenido">
+        <!-- Contenido izquierdo (INPUTS y BOTONES) -->
         <div class="contenido__entrada">
             <textarea placeholder="Ingrese el texto aquí" id="contenido__entrada__input"></textarea>
             <div class="contenido__entrada__aclaracion">
-                <img src="assets/Vector_exclamacion.png" alt="" id="imagen__aclaracion">
+                <img src="assets/Vector_exclamacion.png" alt="Gente buscando cierto elemento" id="imagen__aclaracion">
                 <p id="texto__aclaracion"> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="contenido__entrada__botones">
@@ -25,7 +26,7 @@
                 <button class="botones" id="desencriptar" onclick="desencriptarTexto()">Desencriptar</button>
             </div>
         </div>
-
+        <!-- Contenido derecho (OUTPUT y BOTON) -->
         <div class="contenido__salida">
             <img src="assets/personas_buscando.jpg" alt="" id="contenido__salida__imagen">
             <p id="contenido__salida__titulo"> Ningún mensaje fue encontrado</p>
@@ -49,7 +50,6 @@
                 <i class="fa-brands fa-linkedin"></i>
             </a>
         </div>
-        
 
     </footer>
     <!-- Cartel de adventencia -->
