@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="styles/style.css">
     <!-- Importacion para iconos -->
     <script src="https://kit.fontawesome.com/45e0b11353.js" crossorigin="anonymous"></script>
+    <!-- Importacion para SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 <body >
     <header>
@@ -18,7 +20,7 @@
         <div class="contenido__entrada">
             <textarea placeholder="Ingrese el texto aquí" id="contenido__entrada__input"></textarea>
             <div class="contenido__entrada__aclaracion">
-                <img src="assets/Vector_exclamacion.png" alt="Gente buscando cierto elemento" id="imagen__aclaracion">
+                <img src="assets/Vector_exclamacion.png" alt="Icono exclamación" id="imagen__aclaracion">
                 <p id="texto__aclaracion"> Solo letras minúsculas y sin acentos</p>
             </div>
             <div class="contenido__entrada__botones">
@@ -28,7 +30,7 @@
         </div>
         <!-- Contenido derecho (OUTPUT y BOTON) -->
         <div class="contenido__salida">
-            <img src="assets/personas_buscando.jpg" alt="" id="contenido__salida__imagen">
+            <img src="assets/personas_buscando.jpg" alt="Gente buscando cierto elemento" id="contenido__salida__imagen">
             <p id="contenido__salida__titulo"> Ningún mensaje fue encontrado</p>
             <p id="contenido__salida__texto"> Ingresa el texto que desees encriptar o desencriptar.</p>
             <div class="contenido__salida__oculto">
@@ -52,16 +54,6 @@
         </div>
 
     </footer>
-    <!-- Cartel de adventencia -->
-    <div id="advertencia">
-        <div class="cartel-advertencia">
-            <i class="fa-solid fa-triangle-exclamation"></i>
-            <h2>Texto inválido</h2>
-            <p>Por favor ingrese un nuevo texto sin mayúsculas, tildes ni caracteres especiales</p>
-            <button onclick="ocultarAdvertencia()">Aceptar</button>
-        </div>
-        
-    </div>
     <!-- Script -->
     <script src="app.js"> </script>
 </body>

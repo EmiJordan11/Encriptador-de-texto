@@ -73,20 +73,21 @@ function verificarMayusculasYAcentos(texto){
         if (letra!==" ") {
             if (letra.toUpperCase()==letra || vocalesTildes.includes(letra) ) {
                 /*Muestro la advertencia*/
-                document.getElementById('advertencia').style.display='block'
+                Swal.fire({
+                    title: "Texto inválido",
+                    text: "Por favor ingrese un nuevo texto sin mayúsculas, tildes ni caracteres especiales",
+                    icon: "error",
+                    position: "top"
+                })
+
+                /*Limpia la entrada de texto*/
+                resetearEstilos();
 
                 return 1;
             }
         }
     }
     return 0;
-}
-
-function ocultarAdvertencia(){
-    document.getElementById('advertencia').style.display='none';
-
-    /*Limpia la entrada de texto*/
-    resetearEstilos();
 }
 
 function resetearEstilos(){
